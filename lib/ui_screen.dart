@@ -43,7 +43,7 @@ class _UiScreenState extends State<UiScreen> {
           child: CircleAvatar(
             backgroundColor: Colors.white,
             radius: 14,
-            child: Icon(Icons.arrow_back_outlined, color: Colors.black),
+            child: Icon(Icons.arrow_back_outlined, color: Color(0xff795545)),
           ),
         ),
         title: Padding(
@@ -61,6 +61,7 @@ class _UiScreenState extends State<UiScreen> {
                 style: TextStyle(
                   fontWeight: FontWeight.w700,
                   fontSize: 20,
+                  color: Color(0xff795545)
                 ),
               ),
             ),
@@ -82,14 +83,14 @@ class _UiScreenState extends State<UiScreen> {
                     border: Border.all(color: Colors.black, width: 1),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.orange.withOpacity(0.2),
+                        color: Colors.white.withOpacity(0.02),
                         offset: Offset(-3, 1),
-                        blurRadius: 7,
+                        blurRadius: 10,
                       ),
                       BoxShadow(
-                        color: Colors.white.withOpacity(0.2),
+                        color: Colors.white.withOpacity(0.02),
                         offset: Offset(3, 4),
-                        blurRadius: 7,
+                        blurRadius: 10,
                       ),
                     ],
                   ),
@@ -121,7 +122,7 @@ class _UiScreenState extends State<UiScreen> {
                               child: Center(
                                 child: Text(
                                   "${pageTaxt[index]["id"]}",
-                                  style: TextStyle(fontSize: 20),
+                                  style: TextStyle(fontSize: 20,color: Color(0xff795545)),
                                 ),
                               ),
                             ),
